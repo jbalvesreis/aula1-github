@@ -1,0 +1,63 @@
+package apllication;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program {
+
+	public static void main(String[] args) {
+		/* Conceito de Lista
+		 * Tipo List - Declaração, instanciação
+		 * Demo
+		 * Referencia: //docs.oracle.com/javase/10/docs/api/java/util/List.html
+		 * 
+		 * Assuntos pendentes:
+		 * interfaces
+		 * generics
+		 * predicados(lambda)
+		 */
+		
+		List<String> list = new ArrayList<>();
+		
+		list.add("Maria");
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		for (String x : list) {
+			System.out.println(x);
+		}
+		
+		System.out.println("--------------------");
+		// Inserir na posição 2
+		list.add(2, "Marco");
+				
+		for (String x : list) {
+			System.out.println(x);
+		}
+		
+		System.out.print("ver tamanho da lista: ");
+		System.out.println(list.size());
+		
+		System.out.println("----Remover da Lista---");
+		// Remover Anna da Lista
+		list.remove("Anna");
+		// Remover item 1 "Alex"
+		list.remove(1);
+				
+		for (String x : list) {
+			System.out.println(x);
+		}		
+		System.out.print("Tamanho Atual da lista: ");
+		System.out.println(list.size());
+		
+		System.out.println("----Remover por Predicado ---");
+		// Remover todos que começão com "M"
+		list.removeIf(x -> x.charAt(0) == "M");
+		
+		
+				
+				
+		
+	}
+
+}

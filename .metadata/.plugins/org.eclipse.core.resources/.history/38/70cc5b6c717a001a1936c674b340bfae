@@ -1,0 +1,18 @@
+package application;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		int p;
+//		System.out.println(p);  // erro: Variável nao iniciada
+		
+	    int p;
+		p=10;
+		System.out.println(p); // Variável iniciada 10
+        System.out.println(----------------------------------------------);
+		
+	}
+
+}

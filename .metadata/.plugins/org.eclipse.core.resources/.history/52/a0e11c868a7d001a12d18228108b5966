@@ -1,0 +1,36 @@
+package apllication;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Program {
+
+	public static void main(String[] args) {
+		/* Conceito de Lista
+		 * Tipo List - Declaração, instanciação
+		 * Demo
+		 * Referencia: //docs.oracle.com/javase/10/docs/api/java/util/List.html
+		 * 
+		 * Assuntos pendentes:
+		 * interfaces
+		 * generics
+		 * predicados(lambda)
+		 */
+		
+		List<String> list = new ArrayList<>();
+		
+		list.add("Maria");
+		list.add("Alex");
+		list.add("Bob");
+		list.add("Anna");
+		// Inserir na posição 2
+		list.add(2, "Marco");
+		
+		
+		for (String x : list) {
+			System.out.println(x);
+		}
+		
+	}
+
+}
